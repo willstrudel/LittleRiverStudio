@@ -9,14 +9,7 @@ function App() {
         <p>
           <h1>TESTING GH PAGES WITH REACT AND GH ACTIONS</h1>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
       </header>
     </div>
   );
