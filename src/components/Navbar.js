@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav>
-            <Link to="/" className="pl-8 ">Welcome</Link>
+        <nav className="flex justify-between items-center h-14 bg-white text-black relative shadow-md font-mono" role="navigation">
+            <Link to="/" className="pl-8 ">Will Struder</Link>
                 <div className="px-4 cursor-pointer md:hidden ">
                     <svg className="w-6 h-6" 
                     fill="none"
