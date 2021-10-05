@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center h-14 bg-white text-black relative shadow-md font-mono" role="navigation">
-            <Link to="/" className="pl-8 ">Will Struder</Link>
+        <nav className="flex justify-between items-center h-14 bg-black text-white fixed w-full shadow-md text-lg font-quicksand" role="navigation">
+            <Link to="/" className="pl-8">Will Struder</Link>
                 <div className="px-4 cursor-pointer md:hidden ">
                     <svg className="w-6 h-6" 
                     fill="none"
@@ -17,11 +17,11 @@ const Navbar = () => {
                     d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </div>
-                <div className="pr-8 md:block hidden">
-                    <Link className="p-4" to="/">Home</Link>
-                    <Link className="p-4" to="/projects">Projects</Link>
-                    <Link className="p-4" to="/about">About</Link>
-                    <Link className="p-4" to="/contact">Contact</Link>
+                <div className="pr-8 md:block hidden text-sm ">
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/">Home</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/projects">Projects</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/about">About</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/contact">Contact</Link>
                 </div>
         </nav>
     )
