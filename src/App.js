@@ -1,14 +1,15 @@
 import './App.css';
-import Content from './components/Content';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import { Switch, Route } from 'react-router-dom';
+import Home from './pages';
 
 function App() {
   return (
     <>
           <Navbar />
-          <Hero />
-          <Content />
+          <Switch>
+            <Route path="/" exact component={Home} />
+          </Switch>
     </>
   );
 }
