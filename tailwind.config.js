@@ -2,7 +2,14 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    objectPosition: {
+      'center-top': 'center top',
+    },
     extend: {
+      screens: {
+        'xs': '483px',
+        'xl': '1630px',
+      },
       fontFamily: {
         'quicksand': ["Quicksand", "sans-serif"],
       },
