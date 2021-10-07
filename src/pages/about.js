@@ -18,7 +18,7 @@ const About = () => {
                 <p className="
                 absolute grid
                 left-12 bottom-16 font-quicksand w-96 text-black text-center text-lg
-                xs:h-60 xs:w-72 xs:text-base xs:break-words xs:bottom-24 xs:left-10
+                xs:h-36 xs:w-72 xs:text-base xs:break-words xs:bottom-24 xs:left-12
                 sm:left-36
                 md:inset-x-64  
                 lg:text-2xl"
