@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens: {
       'xs': '390px',
+      'sm': '483px',
       'xl': '1630px',
     },
     objectPosition: {

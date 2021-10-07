@@ -18,9 +18,9 @@ const About = () => {
                 <p className="
                 absolute grid
                 left-12 bottom-16 font-quicksand w-96 text-black text-center text-lg
-                xs:h-36 xs:w-72 xs:text-base xs:break-words xs:bottom-24 xs:left-12
+                xs:h-36 xs:w-72 xs:text-base xs:break-words xs:bottom-52 xs:left-24
                 sm:left-36
-                md:inset-x-64  
+                md:inset-x-64
                 lg:text-2xl"
                 >Hey, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp. My strengths lie in Front End design and architecture. When I'm not building React websites and finding new challenges in tech, I shoot videos for local businesses to increase exposure. My personal hobbies include playing music, cooking, and hanging out with my dog.
                 </p>
@@ -28,7 +28,7 @@ const About = () => {
                     relative grid
                     h-80 inset-y-56 inset-x-14 w-auto rounded-2xl border-white border-2 shadow-2xl p-2
                     xs:h-56 xs:-top-36 xs:left-14
-                    sm:flex sm:absolute sm:h-1/2 sm:left-12 sm:right-36 
+                    sm:flex sm:absolute sm:h-1/4 sm:left-28  
                     md:flex md:absolute 
                     lg:flex lg:right-96 
                     xl:inset-y-56 xl:inset-x-96" 
