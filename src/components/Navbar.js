@@ -17,11 +17,11 @@ const Navbar = ({toggle}) => {
                     d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </div>
-                <div className="pr-8 md:block hidden text-sm">
-                    <Link className="p-4 lg:hover:bg-gray-600 rounded lg:transition lg:duration-200 lg:ease-in-out" to="/">Home</Link>
-                    <Link className="p-4 lg:hover:bg-gray-600 rounded lg:transition lg:duration-200 lg:ease-in-out" to="/projects">Projects</Link>
-                    <Link className="p-4 lg:hover:bg-gray-600 rounded lg:transition lg:duration-200 lg:ease-in-out" to="/about">About</Link>
-                    <Link className="p-4 lg:hover:bg-gray-600 rounded lg:transition lg:duration-200 lg:ease-in-out" to="/contact">Contact</Link>
+                <div className="pr-8 md:block hidden">
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/">Home</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/projects">Projects</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/about">About</Link>
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/contact">Contact</Link>
                 </div>
         </nav>
     )
