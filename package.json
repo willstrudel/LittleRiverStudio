@@ -2,7 +2,7 @@
   "name": "mywebsite",
   "homepage": "https://willstruder.com",
   "version": "0.1.0",
-  "private": true,
+  "private": "false",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@tailwindcss/aspect-ratio": "^0.3.0",
