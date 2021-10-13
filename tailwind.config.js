@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'quicksand': ["Quicksand", "sans-serif"],
+        'dosis': ["Dosis", "sans-serif"],
       },
     },
   },

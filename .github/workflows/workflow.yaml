@@ -1,4 +1,6 @@
 name: Github Pages Deploy
+url: "https://willstruder.com"
+baseurl: ""
 
 on:
  push:

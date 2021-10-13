@@ -9,9 +9,9 @@ const Contact = () => {
                 lg:text-6xl 
                 md:text-4xl 
                 sm:text-3xl 
-                text-2xl ">Contact</h1>
+                text-4xl ">Contact</h1>
 
-            <div className="relative text-center text-2xl top-52">
+            <div className="font-dosis relative text-center text-2xl top-52">
                 <ul>
                     <li>Email</li>
                     <li>LinkedIn</li>
