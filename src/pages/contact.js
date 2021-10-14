@@ -20,7 +20,7 @@ const Contact = () => {
         <>
         <div className="h-screen flex justify-center items-center bg-gray-500">
             <h1 className="
-                absolute top-36 flex object-center-top uppercase font-black
+                absolute top-24 flex object-center-top uppercase font-black
                 xl:text-8xl 
                 lg:text-7xl 
                 md:text-7xl 
@@ -55,8 +55,8 @@ const Contact = () => {
             </div>
         </div>
 
-        <div className="font-dosis relative text-center top-72 text-2xl">
-                <ul>
+        <div className="font-dosis relative top-72 text-lg">
+                <ul className="inline-flex space-x-4">
                     <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
                     <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
                     <a className="App-link" href="https://www.youtube.com/channel/UCeEj5ctVxGU0cf8bDFX_KSA" target="_blank" rel="noopener noreferrer"><li>YouTube</li></a>
