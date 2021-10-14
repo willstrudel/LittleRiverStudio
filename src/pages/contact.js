@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
         </div>
 
-        <div className="font-dosis relative text-center top-80 text-2xl">
+        <div className="font-dosis relative text-center top-72 text-2xl">
                 <ul>
                     <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
                     <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
