@@ -20,7 +20,7 @@ const Contact = () => {
         <>
         <div className="h-screen flex justify-center items-center bg-gray-500">
             <h1 className="
-                absolute top-24 flex object-center-top uppercase font-black
+                absolute top-28 flex object-center-top uppercase font-black
                 xl:text-8xl 
                 lg:text-7xl 
                 md:text-7xl 
@@ -29,25 +29,25 @@ const Contact = () => {
             </h1>
         
 
-        <div className="absolute">
+        <div className="absolute top-52">
             <div className="relative flex justify-center container">
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
 
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="Name" name="name"/>
+                            <input type="text" className="form-control rounded" placeholder=" Name" name="name"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                            <input type="email" className="form-control rounded" placeholder=" Email Address" name="email"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+                            <input type="text" className="form-control rounded" placeholder=" Subject" name="subject"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your Message" name="message"></textarea>
+                            <textarea className="form-control rounded" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info p-1 rounded" value="Send Message"></input>
+                            <input type="submit" className="btn btn-info p-1.5 rounded" value="Send Message"></input>
                         </div>
 
                     </div>
