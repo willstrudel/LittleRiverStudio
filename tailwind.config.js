@@ -8,7 +8,10 @@ module.exports = {
       // => @media (min-width: 375px)
 
       'sm': '390px',
-      // => @media (min-width: 640px) 
+      // => @media (min-width: 390px) 
+
+      '8plus': '414px',
+       // => @media (min-width: 414px)
 
       'md': '768px',
       // => @media (min-width: 768px) 
