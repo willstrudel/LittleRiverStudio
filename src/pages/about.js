@@ -13,7 +13,7 @@ const About = () => {
                         <h1>About Me</h1> 
                     </div>
                     <div className="relative flex justify-center"> 
-                        <img className="absolute xs:text-xs xs:top-32 xs:w-auto xs:h-40 sm:top-60 max-w-lg w-60 h-52 rounded-sm border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
+                        <img className="absolute xs:text-xs xs:top-32 xs:w-auto xs:h-40 sm:top-52 max-w-lg w-60 h-52 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
                     </div>
                 </div>
             </main>

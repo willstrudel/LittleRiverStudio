@@ -62,7 +62,7 @@ const Contact = (props) => {
                 xl:text-8xl 
                 lg:text-7xl 
                 md:text-7xl md:top-36
-                sm:text-4xl sm:top-36
+                sm:text-4xl sm:top-28
                 xs:text-4xl 
                 text-4xl">Contact
             </h1>
