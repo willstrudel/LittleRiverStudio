@@ -61,7 +61,7 @@ const Contact = (props) => {
                 absolute top-20 flex object-center-top uppercase font-black
                 xl:text-8xl 
                 lg:text-7xl 
-                md:text-7xl 
+                md:text-7xl md:top-36
                 sm:text-4xl 
                 xs:text-4xl xs:fixed
                 text-4xl">Contact
@@ -94,7 +94,7 @@ const Contact = (props) => {
             </div>
         </div>
 
-        <div className="font-dosis relative top-72 text-lg xs:top-64 sm:top-72">
+        <div className="font-dosis relative top-72 text-lg xs:top-64 sm:top-62">
                 <ul className="inline-flex space-x-4">
                     <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
                     <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
