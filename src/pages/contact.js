@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 
 const Contact = () => {
-    const [modalIsOpen, setmodalIsOpen] = useState(false)
+    const [modalIsOpen, setModalIsOpen] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -22,9 +22,12 @@ const Contact = () => {
         <>
 
         <div>
-            <Modal isOpen={modalIsOpen}>
+            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
                 <h2>Thank You!</h2>
                 <p>Modal Body</p>
+                <div>
+                    <button onClick={() => setModalIsOpen(false)}>Close</button>
+                </div>
             </Modal>
         </div>
 
@@ -58,7 +61,7 @@ const Contact = () => {
                             <textarea className="form-control resize rounded" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input onClick={() => setmodalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded" value="Submit"></input>
+                            <input onClick={() => setModalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded" value="Submit"></input>
                         </div>
 
                     </div>
