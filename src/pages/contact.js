@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
+import Modal from 'react-modal';
 
 
 const Contact = () => {
+    const [modalIsOpen, setmodalIsOpen] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -18,6 +20,14 @@ const Contact = () => {
 
     return (
         <>
+
+        <div>
+            <Modal isOpen={modalIsOpen}>
+                <h2>Thank You!</h2>
+                <p>Modal Body</p>
+            </Modal>
+        </div>
+
         <div className="h-screen flex justify-center items-center bg-gray-500">
             <h1 className="
                 absolute top-28 flex object-center-top uppercase font-black
@@ -25,7 +35,8 @@ const Contact = () => {
                 lg:text-7xl 
                 md:text-7xl 
                 sm:text-5xl 
-                text-5xl ">Contact
+                xs:text-4xl
+                text-5xl">Contact
             </h1>
         
 
@@ -44,10 +55,10 @@ const Contact = () => {
                             <input type="text" className="form-control rounded" placeholder=" Subject" name="subject"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control rounded" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
+                            <textarea className="form-control resize rounded" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info p-1.5 rounded" value="Send Message"></input>
+                            <input onClick={() => setmodalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded" value="Submit"></input>
                         </div>
 
                     </div>
