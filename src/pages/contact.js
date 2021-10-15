@@ -56,14 +56,14 @@ const Contact = (props) => {
             </div>
        
 
-        <div className="h-screen flex justify-center items-center bg-gray-500">
+        <div className="h-screen w-screen flex justify-center items-center bg-gray-500">
             <h1 className="
                 absolute top-24 underline flex object-center-top uppercase font-black
                 xl:text-8xl 
                 lg:text-7xl 
                 md:text-7xl md:top-36
                 sm:text-4xl sm:top-36
-                xs:text-4xl xs:fixed
+                xs:text-4xl 
                 text-4xl">Contact
             </h1>
         
@@ -86,7 +86,7 @@ const Contact = (props) => {
                             <textarea className="form-control resize rounded" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input onClick={() => setModalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded border-1 border border-black" value="Submit"></input>
+                            <input onClick={() => setModalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded border-1 border bg-white border-black" value="Submit"></input>
                         </div>
 
                     </div>
