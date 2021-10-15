@@ -1,5 +1,8 @@
 import React from 'react'
+import ReactModal from 'react-modal'
 import Headshot from '../images/headshot.JPG'
+
+ReactModal.setAppElement('#root');
 
 const About = () => {
     return (

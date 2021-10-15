@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import Modal from 'react-modal';
+import { motion } from 'framer-motion';
 
 
-const Contact = () => {
+const Contact = (props) => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -20,16 +22,39 @@ const Contact = () => {
 
     return (
         <>
+            <div className="">
+                <Modal className="" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
 
-        <div>
-            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                <h2>Thank You!</h2>
-                <p>Modal Body</p>
-                <div>
-                    <button onClick={() => setModalIsOpen(false)}>Close</button>
-                </div>
-            </Modal>
-        </div>
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            scale: 0,
+                            transition: {
+                                duration: 0.3,
+                            }
+                        }}
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                            transition: {
+                                duration: 0.3,
+                            }
+                        }}
+                        exit={{
+                            opacity: 0,
+                        }}
+                        >
+                            
+                    <h2 className=" font-dosis text-3xl flex justify-center font-bold pt-8 pb-16">Thank You!</h2>
+                    <p className="text-center ">Your message has been sent, we will get back to you as soon as possible. -LRS</p>
+                    <div className="flex justify-center pt-20">
+                        <button className="border-black border bg-gray-700 text-white rounded p-1" onClick={() => setModalIsOpen(false)}>Close</button>
+                    </div>
+                    </motion.div>
+
+                </Modal>
+            </div>
+       
 
         <div className="h-screen flex justify-center items-center bg-gray-500">
             <h1 className="
