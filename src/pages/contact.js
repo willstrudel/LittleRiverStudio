@@ -63,12 +63,12 @@ const Contact = (props) => {
                 lg:text-7xl 
                 md:text-7xl 
                 sm:text-5xl 
-                xs:text-4xl
+                xs:text-4xl xs:fixed
                 text-5xl">Contact
             </h1>
         
 
-        <div className="absolute top-52">
+        <div className="absolute top-52 xs:top-40">
             <div className="relative flex justify-center container">
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
@@ -94,7 +94,7 @@ const Contact = (props) => {
             </div>
         </div>
 
-        <div className="font-dosis relative top-72 text-lg">
+        <div className="font-dosis relative top-72 text-lg xs:top-64">
                 <ul className="inline-flex space-x-4">
                     <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
                     <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
