@@ -8,7 +8,7 @@ const Hero = () => {
             <h1 className="relative uppercase font-black top-20 text-white
                 lg:text-8xl 
                 md:text-7xl 
-                sm:text-5xl sm:top-2
+                sm:text-5xl sm:top-0
                 xs:top-2 
                 text-5xl">Welcome</h1>
 
