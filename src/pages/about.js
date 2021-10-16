@@ -9,11 +9,11 @@ const About = () => {
             <>
             <main className="px-12 h-screen w-screen bg-gray-500 ">
                 <div className="flex flex-wrap justify-center relative">
-                    <div className="8plus:top-16 sm:top-24 xs:top-16 sm-top-12 md:top-32 absolute underline text-4xl uppercase font-black">
+                    <div className="8plus:top-16 sm:top-24 xs:top-16 sm-top-12 md:top-32 md:text-6xl absolute underline text-4xl uppercase font-black">
                         <h1>About Me</h1> 
                     </div>
                     <div className="relative flex justify-center"> 
-                        <img className="absolute 8plus:top-28 xs:text-xs xs:top-32 xs:w-auto xs:h-40 sm:top-44 md:top-72 md:w-auto md:h-72 max-w-lg w-60 h-52 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
+                        <img className="absolute 8plus:top-28 xs:text-xs xs:top-32 xs:w-auto xs:h-40 sm:top-44 md:top-64 md:w-auto md:h-72 max-w-lg w-60 h-52 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
                     </div>
                 </div>
             </main>

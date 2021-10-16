@@ -22,8 +22,8 @@ const Contact = (props) => {
 
     return (
         <>
-            <div className="">
-                <Modal className="" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+            <div>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
 
                     <motion.div
                         initial={{
@@ -45,10 +45,10 @@ const Contact = (props) => {
                         }}
                         >
                             
-                    <h2 className=" font-dosis text-3xl flex justify-center font-bold pt-8 pb-16">Thank You!</h2>
-                    <p className="text-center ">Your message has been sent, we will get back to you as soon as possible. -LRS</p>
-                    <div className="flex justify-center pt-20">
-                        <button className="border-black border bg-gray-700 text-white rounded p-1" onClick={() => setModalIsOpen(false)}>Close</button>
+                    <h2 className="relative md:top-64 md:text-5xl font-dosis text-3xl flex justify-center font-bold pt-8 pb-16">Thank You!</h2>
+                    <p className="relative text-center md:text-2xl px-20 md:top-80">Your message has been sent, we will get back to you as soon as possible. -LRS</p>
+                    <div className="relative md:top-96 flex justify-center pt-20">
+                        <button className="border-black border bg-gray-700 text-white rounded p-1 md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}>Close</button>
                     </div>
                     </motion.div>
 
@@ -68,7 +68,7 @@ const Contact = (props) => {
             </h1>
         
 
-        <div className="absolute top-52 xs:top-36 sm:top-48 md:top-72">
+        <div className="absolute top-52 xs:top-36 sm:top-48 md:top-96">
             <div className="relative flex justify-center container">
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
@@ -94,7 +94,7 @@ const Contact = (props) => {
             </div>
         </div>
 
-        <div className="font-dosis relative top-72 text-lg xs:top-64 sm:top-62">
+        <div className="font-dosis relative top-72 text-lg xs:top-64 sm:top-62 md:top-80">
                 <ul className="inline-flex space-x-4">
                     <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
                     <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
