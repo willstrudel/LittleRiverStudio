@@ -63,12 +63,13 @@ const Contact = (props) => {
                 lg:text-7xl 
                 md:text-7xl md:top-36
                 sm:text-4xl sm:top-28
+                8plus:text-4xl 8plus:top-20
                 xs:text-4xl 
                 text-4xl">Contact
             </h1>
         
 
-        <div className="absolute top-52 xs:top-36 sm:top-48 md:top-96">
+        <div className="absolute top-52 xs:top-36 8plus:top-32 sm:top-48 md:top-96">
             <div className="relative flex justify-center container">
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
