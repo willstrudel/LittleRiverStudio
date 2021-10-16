@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import Modal from 'react-modal';
 import { motion } from 'framer-motion';
-import { GrLinkedin } from 'react-icons/gr';
-import { GrYoutube } from 'react-icons/gr';
-import { GrGithub } from 'react-icons/gr';
-import { GrInstagram } from 'react-icons/gr';
+import { IconContext } from 'react-icons';
+import { GrLinkedin, GrYoutube, GrGithub, GrInstagram, } from 'react-icons/gr';
+import { IoMdCheckmark } from 'react-icons/io';
 
 
 
@@ -27,6 +26,9 @@ const Contact = (props) => {
 
     return (
         <>
+            <IconContext.Provider value= {{ color: "skyblue", size: "1.5em", 
+
+            }}>
             <div>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
 
@@ -50,10 +52,10 @@ const Contact = (props) => {
                         }}
                         >
                             
-                    <h2 className="relative md:top-64 md:text-5xl font-dosis text-3xl flex justify-center font-bold pt-8 pb-16">Thank You!</h2>
-                    <p className="relative text-center md:text-2xl px-20 md:top-80">Your message has been sent, we will get back to you as soon as possible. -LRS</p>
-                    <div className="relative md:top-96 flex justify-center pt-20">
-                        <button className="border-black border bg-gray-700 text-white rounded p-1 md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}>Close</button>
+                    <h2 className="relative xs:top-28 8plus:text-4xl sm:top-28 md:top-64 md:text-5xl font-dosis text-3xl flex justify-center font-bold pt-8 pb-16">Thank You!</h2>
+                    <p className="relative text-center xs:top-28 xs:px-12 sm:top-28 md:px-32 md:text-2xl px-20 md:top-80">Your message has been sent, we will get back to you as soon as possible. -LRS</p>
+                    <div className="relative xs:top-36 sm:top-36 md:top-96 flex justify-center pt-20">
+                        <button className="border-black border bg-gray-600 rounded-3xl p-1 md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}><IoMdCheckmark  size="2em" /></button>
                     </div>
                     </motion.div>
 
@@ -109,6 +111,7 @@ const Contact = (props) => {
                 </ul>
             </div>   
         </div>
+        </IconContext.Provider>
         
 
 
