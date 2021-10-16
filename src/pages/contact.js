@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import Modal from 'react-modal';
 import { motion } from 'framer-motion';
+import { GrLinkedin } from 'react-icons/gr';
+import { GrYoutube } from 'react-icons/gr';
+import { GrGithub } from 'react-icons/gr';
+import { GrInstagram } from 'react-icons/gr';
+
 
 
 const Contact = (props) => {
@@ -96,15 +101,15 @@ const Contact = (props) => {
         </div>
 
         <div className="font-dosis relative top-72 text-lg xs:top-64 sm:top-62 md:top-80">
-                <ul className="inline-flex space-x-4">
-                    <a className="App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li>LinkedIn</li></a>
-                    <a className="App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li>GitHub</li></a>
-                    <a className="App-link" href="https://www.youtube.com/channel/UCeEj5ctVxGU0cf8bDFX_KSA" target="_blank" rel="noopener noreferrer"><li>YouTube</li></a>
-                    <a className="App-link" href="https://www.instagram.com/willstruder/" target="_blank" rel="noopener noreferrer"><li>Instagram</li></a>
+                <ul className="inline-flex space-x-10">
+                    <a className=" text-black visited:text-blue-300 App-link" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li><GrLinkedin /></li></a>
+                    <a className=" text-black visited:text-blue-300 App-link" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li><GrGithub /></li></a>
+                    <a className=" text-black visited:text-blue-300 App-link" href="https://www.youtube.com/channel/UCeEj5ctVxGU0cf8bDFX_KSA" target="_blank" rel="noopener noreferrer"><li><GrYoutube /></li></a>
+                    <a className=" text-black visited:text-blue-300 App-link" href="https://www.instagram.com/willstruder/" target="_blank" rel="noopener noreferrer"><li><GrInstagram /></li></a>
                 </ul>
             </div>   
         </div>
-
+        
 
 
         </>
