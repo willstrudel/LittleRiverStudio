@@ -1,11 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import River from '../images/river.jpg';
 
 const Hero = () => {
     return (
         <div className="bg-gray-700 h-screen flex flex-col justify-center items-center">
-            <h1 className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl uppercase font-black mb-14 text-white">Welcome</h1>
-            <Link to="/projects" className="uppercase mt-12 py-4 px-6 bg-black rounded-full sm:text-lg md:text-1xl lg:text-2xl hover:bg-gray-600 lg:transition lg:duration-300 lg:ease-in-out flex items-center animate-bounce text-white font-quicksand">Projects</Link>
+            <h1 className="relative uppercase font-black top-20 text-white
+                lg:text-8xl 
+                md:text-7xl 
+                sm:text-5xl sm:top-2
+                xs:top-24 
+                text-5xl">Welcome</h1>
+
+            <p className="text-white font-dosis 
+                xs:text-xl xs:pt-6
+                sm:pt-7">to</p>
+
+            <p className="text-white font-dosis  
+                xs:text-3xl xs:p-3
+                sm:p-3 sm:pb-6">Little River Studio</p>
+
+            <img className="w-full bg-cover" src={River} alt="river-img" />
+                <Link to="/contact" className="uppercase mt-12 py-4 px-6 bg-black rounded-full flex items-center animate-bounce text-white font-quicksand hover:bg-gray-600 
+                sm:text-lg 
+                md:text-1xl  
+                lg:text-2xl 
+                lg:transition lg:duration-300 lg:ease-in-out">Contact</Link>
         </div>
     )
 }
