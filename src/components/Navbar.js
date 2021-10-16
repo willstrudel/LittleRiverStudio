@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({toggle}) => {
     return (
-        <nav className="flex justify-between items-center h-14 bg-black text-white fixed w-full shadow-xl text-lg font-quicksand" role="navigation">
+        <nav className="flex justify-between items-center h-14 bg-black text-white fixed w-full shadow-2xl text-lg font-quicksand" role="navigation">
             <Link to="/" className="pl-8">Will Struder</Link>
                 <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
                     <svg className="w-6 h-6" 
@@ -18,6 +18,7 @@ const Navbar = ({toggle}) => {
                     </svg>
                 </div>
                 <div className="pr-8 md:block hidden">
+                    <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/">Home</Link>
                     <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/projects">Projects</Link>
                     <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/about">About</Link>
                     <Link className="p-4 hover:bg-gray-600 rounded transition duration-200 ease-in-out" to="/contact">Contact</Link>
