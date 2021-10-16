@@ -9,7 +9,7 @@ const Hero = () => {
                 lg:text-8xl 
                 md:text-7xl 
                 sm:text-5xl sm:top-2
-                xs:top-24 
+                xs:top-2 
                 text-5xl">Welcome</h1>
 
             <p className="text-white font-dosis 
