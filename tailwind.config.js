@@ -7,11 +7,8 @@ module.exports = {
       'xs': '360px',
       // => @media (min-width: 375px)
 
-      'sm': '390px',
+      'sm': '640px',
       // => @media (min-width: 390px) 
-
-      '8plus': '414px',
-       // => @media (min-width: 414px)
 
       'md': '768px',
       // => @media (min-width: 768px) 

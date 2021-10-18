@@ -6,22 +6,30 @@ ReactModal.setAppElement('#root');
 
 const About = () => {
     return (
-            <>
-            <main className="px-12 h-screen w-screen bg-gray-500 ">
-                <div className="flex flex-wrap justify-center relative">
-                    <div className="8plus:top-16 sm:top-24 xs:top-16 sm-top-12 md:top-32 md:text-6xl absolute underline text-4xl uppercase font-black">
-                        <h1>About Me</h1> 
+        <>
+            <main className="h-screen w-screen flex flex-col items-center justify-center bg-gray-500
+             md:flex-row-reverse md:justify-evenly">
+                
+                <div className="pt-12 flex justify-center order-2 md:order-1"> 
+                        <img className="h-auto w-72 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
                     </div>
-                    <div className="relative flex justify-center"> 
-                        <img className="absolute 8plus:top-28 xs:text-xs xs:top-32 xs:w-auto xs:h-40 sm:top-44 md:top-64 md:w-auto md:h-72 max-w-lg w-60 h-52 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
+
+                    <div className="flex p-2 underline text-4xl uppercase font-black
+                     md:self-start md:order-1 md:pt-36">
+                            <h1>About Me</h1> 
                     </div>
-                </div>
+
+                    <div className="flex pt-12 order-2 md:order-1">
+                        <p className="w-80 font-quicksand text-black text-center text-md"
+                        >Hey, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp. My strengths are Front End design and site architecture. When I'm not building React websites and finding new challenges in tech, I shoot videos for local businesses to increase brand awareness. My personal hobbies include playing music, cooking, and hanging out with my dog.</p>
+                    </div>
+
+             
+
+                
+              
             </main>
-            <div className="relative flex flex-wrap justify-center">
-                <p className="absolute 8plus:bottom-2 xs:bottom-8 xs:text-sm sm:bottom-24 sm:text-base md:bottom-48 md:text-2xl md:w-screen md:px-36 w-72 font-quicksand text-black text-center text-md">Hey, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp. My strengths lie in Front End design and site architecture. When I'm not building React websites and finding new challenges in tech, I shoot videos for local businesses to increase brand awareness. My personal hobbies include playing music, cooking, and hanging out with my dog.
-                </p>
-            </div>
-            </>
+        </>
     )
 }
 
