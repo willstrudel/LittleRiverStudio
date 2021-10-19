@@ -4,7 +4,7 @@ import River from '../images/river.jpg';
 
 const Hero = () => {
     return (
-        <div className="bg-gray-700 h-screen flex flex-col justify-center items-center">
+        <div className="bg-gray-600 h-screen flex flex-col justify-center items-center">
             <h1 className="relative uppercase font-black top-20 text-white
                 lg:text-8xl 
                 md:text-7xl 
@@ -21,7 +21,7 @@ const Hero = () => {
                 sm:p-3 sm:pb-6">Little River Studio</p>
 
             <img className="w-full bg-cover" src={River} alt="river-img" />
-                <Link to="/contact" className="uppercase mt-12 py-4 px-6 bg-black rounded-full flex items-center animate-bounce text-white font-quicksand hover:bg-gray-600 
+                <Link to="/contact" className="uppercase mt-12 py-4 px-6 bg-black rounded-full flex items-center animate-bounce text-white font-quicksand hover:bg-blue-500 
                 sm:text-lg 
                 md:text-1xl  
                 lg:text-2xl 

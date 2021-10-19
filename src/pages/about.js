@@ -7,27 +7,26 @@ ReactModal.setAppElement('#root');
 const About = () => {
     return (
         <>
-            <main className="h-screen w-screen flex flex-col items-center justify-center bg-gray-500
-             md:flex-row-reverse md:justify-evenly">
+            <main className="h-screen w-screen p-10 justify-center bg-gray-200">
                 
-                <div className="pt-12 flex justify-center order-2 md:order-1"> 
-                        <img className="h-auto w-72 rounded-md border-white border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
-                    </div>
+            <div className="space-y-10 md:grid md:grid-cols-2 ">
 
-                    <div className="flex p-2 underline text-4xl uppercase font-black
-                     md:self-start md:order-1 md:pt-36">
-                            <h1>About Me</h1> 
-                    </div>
-
-                    <div className="flex pt-12 order-2 md:order-1">
-                        <p className="w-80 font-quicksand text-black text-center text-md"
-                        >Hey, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp. My strengths are Front End design and site architecture. When I'm not building React websites and finding new challenges in tech, I shoot videos for local businesses to increase brand awareness. My personal hobbies include playing music, cooking, and hanging out with my dog.</p>
-                    </div>
-
-             
-
+                <div className="flex md:flex-col justify-center pt-12 text-5xl md:text-7xl uppercase font-black">
+                    <h1>About Me</h1> 
+                </div>
                 
-              
+                <div className="flex justify-center md:flex-col"> 
+                    <img className="rounded-md border-yellow-50 border-2 shadow-2xl p-2" src={Headshot} alt="headshot" />
+                </div>
+
+                <div className=" flex justify-center md:flex-col">
+                    <p className="w-96 font-quicksand text-black text-center text-lg font-bold">
+                        Hey there, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp, specializing in Front End design and site architecture using Tailwind CSS and React. When I'm not building projects and finding new challenges in tech, I shoot videos for local businesses to increase brand awareness. My personal hobbies include playing music, cooking, and hanging out with my dog.
+                    </p>
+                </div>   
+                           
+            </div> 
+
             </main>
         </>
     )
