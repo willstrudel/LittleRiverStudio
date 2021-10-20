@@ -7,10 +7,8 @@ import { GrLinkedin, GrYoutube, GrGithub, GrInstagram, } from 'react-icons/gr';
 import { IoMdCheckmark } from 'react-icons/io';
 
 
-
 const Contact = (props) => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
-
 
     function sendEmail(e) {
         e.preventDefault();
@@ -26,12 +24,9 @@ const Contact = (props) => {
 
     return (
         <>
-            <IconContext.Provider value= {{ color: "skyblue", size: "1.5em", 
-
-            }}>
+            <IconContext.Provider value= {{ color: "skyblue", size: "1.5em",}}>
             <div>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-
                     <motion.div
                         initial={{
                             opacity: 0,
@@ -58,7 +53,6 @@ const Contact = (props) => {
                         <button className="border-black border bg-gray-600 rounded-3xl p-1 md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}><IoMdCheckmark  size="2em" /></button>
                     </div>
                     </motion.div>
-
                 </Modal>
             </div>
        
