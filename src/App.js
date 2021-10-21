@@ -8,6 +8,8 @@ import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Dropdown from './components/Dropdown';
 import Videos from './pages/videos';
+import Coding from './pages/coding';
+import Photography from './pages/photography';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,6 +41,8 @@ function App() {
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
             <Route path="/videos" component={Videos} />
+            <Route path="/Coding" component={Coding} />
+            <Route path="/Photography" component={Photography} />
           </Switch>
     </>
   );

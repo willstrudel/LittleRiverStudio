@@ -10,24 +10,21 @@ const Projects = () => {
 
             <div className="bg-gray-300 lg:grid lg:grid-cols-3 lg:space-x-6 justify-center">
                 
-                    <div className="bg-green-300 flex justify-center">
+                    <div className="bg-green-300 flex justify-center uppercase text-2xl lg:text-4xl">
                         <Link className="flex justify-center" to="/videos">
                             <p>Videos</p>
                         </Link> 
                     </div>
-                    <div className="bg-red-300 flex justify-center">
-                        <Link className="flex justify-center" to="/videos">
+                    <div className="bg-red-300 flex justify-center uppercase text-2xl lg:text-4xl">
+                        <Link className="flex justify-center" to="/photography">
                             <p>Photography</p>
                         </Link> 
                     </div>
-                    <div className="bg-yellow-300 flex justify-center">
-                        <Link className="flex justify-center" to="/videos">
+                    <div className="bg-yellow-300 flex justify-center uppercase text-2xl lg:text-4xl">
+                        <Link className="flex justify-center" to="/coding">
                             <p>Coding</p>
                         </Link> 
                     </div>
-                          
-                {/* <div className="bg-yellow-300 flex justify-center">Photography</div>            
-                <div className="bg-blue-300 flex justify-center">Programming</div>   */}
             </div>          
         </div>
     )
