@@ -7,6 +7,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Dropdown from './components/Dropdown';
+import Videos from './pages/videos';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,6 +38,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
+            <Route path="/videos" component={Videos} />
           </Switch>
     </>
   );

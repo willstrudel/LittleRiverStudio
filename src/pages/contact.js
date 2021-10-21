@@ -60,7 +60,7 @@ return (
             </div>
        
 
-        <div className="min-h-screen justify-center grid items-center bg-gray-700">
+        <div className="min-h-screen justify-center grid items-center bg-gray-600">
             <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 shadow-2xl
                 lg:text-7xl 
                 md:text-7xl">Contact
