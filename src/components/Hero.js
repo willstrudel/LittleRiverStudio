@@ -4,19 +4,19 @@ import River from '../images/river.jpg';
 
 const Hero = () => {
     return (
-        <div className="min-h-screen p-4 bg-gray-600 grid grid-cols-1">
-            <h1 className="flex justify-center text-5xl uppercase font-black mt-20 text-white
+        <div className="min-h-screen p-4 md:space-y-10 bg-gray-600 grid grid-cols-1">
+            <h1 className="flex justify-center text-6xl uppercase font-black mt-20 text-white
                 lg:text-8xl 
                 md:text-7xl 
-                sm:text-5xl">Welcome
+                sm:text-6xl">Welcome
             </h1>
             <p className="flex justify-center text-xl text-white font-dosis 
                 md:text-3xl
                 lg:text-5xl">to
             </p>
-            <p className="flex justify-center text-3xl text-white font-dosis 
-                md:text-4xl
-                lg:text-5xl">Little River Studio
+            <p className="flex justify-center text-4xl text-white font-dosis underline
+                md:text-5xl
+                lg:text-6xl">Little River Studio
             </p>
         <div className="flex justify-center">
             <img className="w-full max-w-7xl rounded-xl" src={River} alt="river-img" />
