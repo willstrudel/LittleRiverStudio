@@ -6,7 +6,7 @@ import Vans from '../images/vans.jpg';
 
 const Projects = () => {
     return (
-        <div className="min-h-screen grid justify-center items-center bg-indigo-900">
+        <div className="min-h-screen grid justify-center items-center bg-indigo-800">
              
             <div className="flex justify-center sm:mt-20 md:mt-10 lg:mt-20 mt-20 border-b-2 border-white xl:mb-10 lg:border-none">
                 <h1 className="md:mt-10 mb-8 lg:mb-0 flex justify-center uppercase font-black text-white text-6xl shadow-2xl md:text-7xl lg:text-7xl">Projects</h1>

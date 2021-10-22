@@ -5,7 +5,7 @@ const Videos = () => {
         <>
             <main className="min-h-screen justify-center items-center bg-blue-300">
                 <div className="flex justify-center border-b-4 border-indigo-500 xl:mb-2 sm:border-none">
-                     <h1 className=" mt-28 flex justify-center uppercase font-black text-black text-6xl md:text-7xl lg:text-7xl">Videos</h1>
+                     <h1 className="mb-8 mt-28 flex justify-center uppercase font-black text-black text-6xl md:text-7xl lg:text-7xl">Videos</h1>
                 </div>
 
 
