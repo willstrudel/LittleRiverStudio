@@ -8,12 +8,12 @@ const Projects = () => {
     return (
         <div className="min-h-screen grid justify-center items-center bg-indigo-900">
              
-            <div className="flex justify-center sm:mt-0 md:mt-10 lg:mt-20 mt-20 border-b-2 border-white xl:mb-2 sm:border-none">
-                <h1 className="xl:mt-20 mb-8 flex justify-center uppercase font-black text-white text-6xl shadow-2xl md:text-7xl lg:text-7xl">Projects</h1>
+            <div className="flex justify-center sm:mt-20 md:mt-10 lg:mt-20 mt-20 border-b-2 border-white xl:mb-2 sm:border-none">
+                <h1 className="xl:mt-10 mb-8 flex justify-center uppercase font-black text-white text-6xl shadow-2xl md:text-7xl lg:text-7xl">Projects</h1>
             </div>
 
 
-            <div className="m-20 grid sm:gap-x-6 gap-7 sm:grid-cols-3 lg:grid-cols-3 grid-rows-1 sm:grid-rows-2 sm:grid-flow-col">
+            <div className="m-20 grid grid-rows-1 gap-7 sm:gap-x-6 sm:grid-rows-1 md:grid-rows-2 md:grid-flow-col lg:grid-cols-3 ">
 
                 <img className="rounded-xl shadow-xl" src={YTtacos} alt="Taco video" />
                 <div className="flex items-center justify-center text-white hover:scale-125 hover:-translate-y-2 transform-gpu uppercase font-black text-2xl md:text-3xl lg:text-4xl">
