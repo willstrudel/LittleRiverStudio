@@ -1,7 +1,10 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+
     boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
         DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -13,7 +16,7 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
         none: 'none',
     },
-    
+
     screens: {
       'xs': '360px',
       // => @media (min-width: 375px)
@@ -35,6 +38,9 @@ module.exports = {
     },
 
     extend: {
+
+      colors: colors,
+
       fontFamily: {
         'quicksand': ["Quicksand", "sans-serif"],
         'dosis': ["Dosis", "sans-serif"],

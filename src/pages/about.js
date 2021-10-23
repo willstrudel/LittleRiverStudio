@@ -7,7 +7,7 @@ ReactModal.setAppElement('#root');
 const About = () => {
     return (
         <>
-            <main className="min-h-screen p-8 bg-gray-300 grid sm:grid-cols-2 justify-center items-center">
+            <main className="min-h-screen p-8 bg-gradient-to-b from-sky-300 via-emerald-700 to-trueGray-600 grid sm:grid-cols-2 justify-center items-center">
                 
                 <div className="lg:gap-24 gap-12 grid justify-center mt-14">
                     <h1 className="justify-center flex text-5xl md:text-7xl uppercase font-black">About Me
@@ -25,7 +25,7 @@ const About = () => {
                 </div>
                 <div className="lg:p-16 lg:mb-0 mb-14 p-12">
                     <div className="flex flex-col justify-center"> 
-                        <img className="rounded-xl border-indigo-500 border-4 shadow-3xl" src={Headshot} alt="headshot" />
+                        <img className="rounded-xl shadow-3xl" src={Headshot} alt="headshot" />
                     </div> 
                 </div>     
 

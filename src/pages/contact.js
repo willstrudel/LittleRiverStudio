@@ -24,7 +24,7 @@ const Contact = (props) => {
 
 return (
     <>
-        <IconContext.Provider value= {{ color: "white", size: "1.5em",}}>
+        <IconContext.Provider value= {{ color: "white", size: "2em",}}>
             <div>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
                     <motion.div 
@@ -60,32 +60,32 @@ return (
             </div>
        
 
-        <div className="min-h-screen justify-center grid items-center bg-gray-600">
-            <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 shadow-2xl
+        <div className="min-h-screen justify-center grid items-center bg-gradient-to-b from-amber-400 via-sky-700 to-emerald-800">
+            <h1 className="flex justify-center uppercase font-black text-black text-6xl mt-20 border-b-4 border-emerald-600 pb-16
                 lg:text-7xl 
                 md:text-7xl">Contact
             </h1>
         
 
-            <div className="border-b-4 pb-10 border-t-4 pt-6 border-indigo-500">
+            <div className="border-b-4 pb-10 border-amber-400">
                 <div className="flex justify-center">
                     <form onSubmit={sendEmail}>
                         <div className="row pt-5 mx-auto">
 
-                            <div className="col-8 form-group mx-auto">
-                                <input type="text" className="form-control rounded w-60" placeholder=" Name" name="name"/>
+                            <div className="col-8 form-group mx-auto border-t-2 pt-24">
+                                <input type="text" className="form-control border-4 border-trueGray-200 rounded w-60" placeholder=" Name" name="name"/>
                             </div>
                             <div className="col-8 form-group pt-3 mx-auto">
-                                <input type="email" className="form-control rounded w-60" placeholder=" Email Address" name="email"/>
+                                <input type="email" className="form-control border-4 border-trueGray-200 rounded w-60" placeholder=" Email Address" name="email"/>
                             </div>
                             <div className="col-8 form-group pt-3 mx-auto">
-                                <input type="text" className="form-control rounded w-60" placeholder=" Subject" name="subject"/>
+                                <input type="text" className="form-control border-4 border-trueGray-200 rounded w-60" placeholder=" Subject" name="subject"/>
                             </div>
                             <div className="col-8 form-group pt-3 mx-auto">
-                                <textarea className="form-control resize rounded w-72" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
+                                <textarea className="form-control border-4 border-trueGray-200 resize rounded w-72" id="" cols="30" rows="8" placeholder=" Your Message" name="message"></textarea>
                             </div>
-                            <div className="col-8 pt-3 mx-auto">
-                                <input onClick={() => setModalIsOpen(true)} type="submit" className="btn btn-info p-1.5 px-2.5 rounded border-1 border bg-white border-black" value="Submit"></input>
+                            <div className="col-8 pt-3 mx-auto border-b-2 pb-14">
+                                <input onClick={() => setModalIsOpen(true)} type="submit" className="uppercase font-semibold btn btn-info p-1.5 px-2.5 rounded text-white bg-sky-500" value="Submit"></input>
                             </div>
 
                         </div>
