@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+
 
 const images = [
     { id: '1', imageName: 'img1.jpg', tag: 'car'}, 
@@ -18,16 +19,37 @@ const images = [
     { id: '15', imageName: 'img15.jpg', tag: 'car'}, 
 ];
 
+
 const Photography = () => {
+    const [tag, setTag] = useState('all');
+    const [ filteredImages, setFilteredImages ] = useState([]);
+
+
+    useEffect(
+        () => 
+            { tag === 'all' ? setFilteredImages(images) : setFilteredImages( images.filter(image => image.tag === tag ));}, 
+        [tag]); 
+
+
     return (
-        <>
-            <main className="min-h-screen justify-center grid items-start bg-gray-500">
-                <div className="pt-28">
-                    <h1 className="justify-center mb-10 flex text-5xl md:text-7xl uppercase font-black">Photography</h1>
+        
+            <div className="App" handleSetTag={setTag}>
+                <div className="pt-52">
+                    <TagButton name='all' handleSetTag={setTag}/>
+                    <TagButton name='car' handleSetTag={setTag}/>
+                    <TagButton name='people' handleSetTag={setTag}/>
+                    <TagButton name='motorcycle' handleSetTag={setTag}/>
+                    <TagButton name='dogs' handleSetTag={setTag}/>
+                    { filteredImages.map( image => <div>{ image.imageName }</div>)}
                 </div>
-            </main>
-        </>
+            </div>
+            
+        
     )
 }
+
+const TagButton = ( {name, handleSetTag} ) => {
+    return <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md">{name.toUpperCase()}</button>;
+};
 
 export default Photography;
