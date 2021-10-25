@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import '../App.css';
+
 
 
 const images = [
@@ -20,36 +22,45 @@ const images = [
 ];
 
 
-const Photography = () => {
+function App() {
     const [tag, setTag] = useState('all');
     const [ filteredImages, setFilteredImages ] = useState([]);
 
 
     useEffect(
-        () => 
-            { tag === 'all' ? setFilteredImages(images) : setFilteredImages( images.filter(image => image.tag === tag ));}, 
-        [tag]); 
+        () => { 
+            tag === 'all' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag === tag ));
+        }, 
+        [tag]
+        
+    ); 
 
 
     return (
         
-            <div className="App" handleSetTag={setTag}>
+            <div className="App">
                 <div className="pt-52">
-                    <TagButton name='all' handleSetTag={setTag}/>
-                    <TagButton name='car' handleSetTag={setTag}/>
-                    <TagButton name='people' handleSetTag={setTag}/>
-                    <TagButton name='motorcycle' handleSetTag={setTag}/>
-                    <TagButton name='dogs' handleSetTag={setTag}/>
-                    { filteredImages.map( image => <div>{ image.imageName }</div>)}
+                    <TagButton name="all" handleSetTag={setTag}/>
+                    <TagButton name="car" handleSetTag={setTag}/>
+                    <TagButton name="people" handleSetTag={setTag}/>
+                    <TagButton name="motorcycle" handleSetTag={setTag}/>
+                    <TagButton name="dogs" handleSetTag={setTag}/>
+                    { filteredImages.map( image => 
+                    <div key={image.id}>
+                        <img src={`../images/${image.imageName}`} alt="images"/>
+                    </div>)
+                    }
                 </div>
             </div>
             
         
-    )
-}
-
-const TagButton = ( {name, handleSetTag} ) => {
-    return <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md">{name.toUpperCase()}</button>;
+    );
 };
 
-export default Photography;
+const TagButton = ( {name, handleSetTag} ) => {
+    return ( <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md p-1">{name.toUpperCase()}</button>
+    );
+};
+
+
+export default App;
