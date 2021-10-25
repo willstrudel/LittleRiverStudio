@@ -8,12 +8,12 @@ const Projects = () => {
     return (
         <div className="min-h-screen grid justify-center items-center bg-gradient-to-b from-coolGray-500 via-coolGray-700 to-coolGray-500">
              
-            <div className="flex justify-center sm:mt-20 md:mt-10 lg:mt-20 mt-20 border-b-2 border-black xl:mb-10 lg:border-none">
+            <div className="flex justify-center mt-20 sm:mt-20 md:mt-10 lg:mt-20 xl:mb-10">
                 <h1 className="md:mt-10 mb-8 lg:mb-0 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Projects</h1>
             </div>
 
 
-            <div className="items-center m-14 md:m-12 grid grid-rows-1 gap-y-10 sm:gap-y-8 sm:gap-x-8 md:gap-x-10 lg:gap-x-12 xl:gap-x-16 sm:grid-rows-1 lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3">
+            <div className="items-center m-14 md:m-12 grid grid-rows-1 gap-y-10 lg:gap-y-20 xl:gap-y-12 2xl:gap-y-0 sm:gap-y-8 sm:gap-x-8 md:gap-x-10 lg:gap-x-8 xl:gap-x-16 sm:grid-rows-1 lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3">
 
                 <img className="rounded-xl shadow-2xl" src={YTtacos} alt="Taco video" />
                 <div className="flex items-center justify-center">
