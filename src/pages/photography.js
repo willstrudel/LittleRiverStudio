@@ -38,27 +38,32 @@ function App() {
 
     return (
         
-            <div className="App">
-                <div className="pt-52">
+        <div className="App">
+            <div className="">
+                <h1>Photography</h1>
+            </div>
+                <div className="pt-32 text-center pb-10 bg-coolGray-300">
                     <TagButton name="all" handleSetTag={setTag}/>
                     <TagButton name="car" handleSetTag={setTag}/>
                     <TagButton name="people" handleSetTag={setTag}/>
                     <TagButton name="motorcycle" handleSetTag={setTag}/>
                     <TagButton name="dogs" handleSetTag={setTag}/>
-                    { filteredImages.map( image => 
-                    <div key={image.id}>
-                        <img src={`../images/${image.imageName}`} alt="images"/>
-                    </div>)
-                    }
                 </div>
-            </div>
-            
-        
+
+                <div className="container w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6 mt-10 mb-10">
+                        { filteredImages.map( image => (
+                            <div key={image.id} className="border-2 rounded-lg">
+                                <img className="w-full" src={`../images/${image.imageName}`} alt="images"/>
+                            </div>))}
+                </div>
+        </div>
+                
     );
 };
 
 const TagButton = ( {name, handleSetTag} ) => {
-    return ( <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md p-1">{name.toUpperCase()}</button>
+    return ( 
+        <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md p-1 font-black font-dosis ml-5 mr-5 cursor-pointer">{name.toUpperCase()}</button>
     );
 };
 
