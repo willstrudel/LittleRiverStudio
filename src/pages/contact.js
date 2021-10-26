@@ -61,13 +61,13 @@ return (
        
 
         <div className="min-h-screen justify-center grid items-center bg-gradient-to-bl from-coolGray-900 via-coolGray-600 to-trueGray-900">
-            <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 border-b-4 border-white pb-12
+            <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 border-b-4 border-white pb-2
                 lg:text-7xl 
                 md:text-7xl">Contact
             </h1>
         
 
-            <div className="border-b-4 pb-20 border-white">
+            <div className="border-b-4 pb-16 border-white">
                 <div className="flex justify-center">
                     <form onSubmit={sendEmail}>
                         <div className="row mx-auto">

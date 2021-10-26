@@ -18,19 +18,19 @@ const Projects = () => {
                 <img className="rounded-xl shadow-2xl" src={YTtacos} alt="Taco video" />
                 <div className="flex items-center justify-center">
                     <Link className="flex justify-center" to="/videos">
-                        <p className="text-white uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Videos</p>
+                        <p className="text-white underline uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Videos</p>
                     </Link> 
                 </div>
                 <img className="rounded-xl shadow-2xl" src={Vans} alt="Vans shoes" />
                 <div className="flex items-center justify-center">
                     <Link className="flex justify-center" to="/photography">
-                        <p className="text-white uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Photography</p>
+                        <p className="text-white underline uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Photography</p>
                     </Link> 
                 </div>
                 <img className="rounded-xl shadow-2xl" src={enCapsulate} alt="enCapsulate" />
                 <div className="flex items-center justify-center">
                     <Link className="flex justify-center" to="/coding"> 
-                        <p className="text-white uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Coding</p>
+                        <p className="text-white underline uppercase font-black text-2xl md:text-3xl lg:text-4xl hover:scale-125 hover:-translate-y-2 transform-gpu">Coding</p>
                     </Link> 
                 </div>
 

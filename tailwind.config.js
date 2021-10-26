@@ -39,6 +39,8 @@ module.exports = {
 
     extend: {
 
+
+
       colors: colors,
 
       fontFamily: {
