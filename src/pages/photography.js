@@ -38,8 +38,8 @@ function App() {
 
     return (
         <>
-        <div className="bg-coolGray-600 pt-24">
-                        <h1 className="font-black text-white text-center uppercase text-7xl">Photography</h1>
+        <div className="bg-coolGray-600 pt-24 min-w-screen">
+                        <h1 className="font-black text-white text-center uppercase text-4xl xl:text-7xl">Photography</h1>
                     </div>
         <div className="bg-gradient-to-b bg-coolGray-600 to-coolGray-400 min-h-screen pt-12">
                 <div className="tags">
