@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
-
+import { SRLWrapper } from 'simple-react-lightbox';
 
 
 const images = [
@@ -49,13 +49,16 @@ function App() {
                     <TagButton name="dogs" handleSetTag={setTag} tagActive={ tag === 'dogs' ? true : false }/>
                     <TagButton name="cars" handleSetTag={setTag} tagActive={ tag === 'cars' ? true : false }/>
                 </div>
-
+            <SRLWrapper>
                 <div className="container w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6 mt-20 pb-10">
                         { filteredImages.map( image => (
                             <div key={image.id} className="border-2 rounded-lg">
-                                <img className="w-full rounded-md" src={`../images/${image.imageName}`} alt="images"/>
+                                <a href={`../images/${image.imageName}`}>
+                                    <img className="w-full rounded-md" src={`../images/${image.imageName}`} alt=""/>
+                                </a>
                             </div>))}
                 </div>
+            </SRLWrapper>
         </div>
         </>      
     );

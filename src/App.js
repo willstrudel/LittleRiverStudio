@@ -11,6 +11,7 @@ import Videos from './pages/videos';
 import Coding from './pages/coding';
 import Photography from './pages/photography';
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false)
 
