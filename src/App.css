@@ -1,0 +1,14 @@
+.tags{ 
+    text-align: center;
+    font-size: larger;
+    padding: 20px 0px;
+    background-color: rgb(64, 121, 196);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}

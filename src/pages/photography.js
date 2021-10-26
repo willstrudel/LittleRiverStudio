@@ -4,11 +4,11 @@ import '../App.css';
 
 
 const images = [
-    { id: '1', imageName: 'img1.jpg', tag: 'car'}, 
-    { id: '2', imageName: 'img2.jpg', tag: 'car'},
-    { id: '3', imageName: 'img3.jpg', tag: 'car'}, 
-    { id: '4', imageName: 'img4.jpg', tag: 'car'},
-    { id: '5', imageName: 'img5.jpg', tag: 'car'}, 
+    { id: '1', imageName: 'img1.jpg', tag: 'cars'}, 
+    { id: '2', imageName: 'img2.jpg', tag: 'cars'},
+    { id: '3', imageName: 'img3.jpg', tag: 'cars'}, 
+    { id: '4', imageName: 'img4.jpg', tag: 'cars'},
+    { id: '5', imageName: 'img5.jpg', tag: 'cars'}, 
     { id: '6', imageName: 'img6.jpg', tag: 'motorcycle'}, 
     { id: '7', imageName: 'img7.jpg', tag: 'motorcycle'}, 
     { id: '8', imageName: 'img8.jpg', tag: 'people'}, 
@@ -18,7 +18,7 @@ const images = [
     { id: '12', imageName: 'img12.jpg', tag: 'dogs'}, 
     { id: '13', imageName: 'img13.jpg', tag: 'dogs'}, 
     { id: '14', imageName: 'img14.jpg', tag: 'dogs'}, 
-    { id: '15', imageName: 'img15.jpg', tag: 'car'}, 
+    { id: '15', imageName: 'img15.jpg', tag: 'cars'}, 
 ];
 
 
@@ -37,33 +37,34 @@ function App() {
 
 
     return (
-        
-        <div className="App">
-            <div className="">
-                <h1>Photography</h1>
-            </div>
-                <div className="pt-32 text-center pb-10 bg-coolGray-300">
-                    <TagButton name="all" handleSetTag={setTag}/>
-                    <TagButton name="car" handleSetTag={setTag}/>
-                    <TagButton name="people" handleSetTag={setTag}/>
-                    <TagButton name="motorcycle" handleSetTag={setTag}/>
-                    <TagButton name="dogs" handleSetTag={setTag}/>
+        <>
+        <div className="bg-coolGray-600 pt-24">
+                        <h1 className="font-black text-white text-center uppercase text-7xl">Photography</h1>
+                    </div>
+        <div className="bg-gradient-to-b bg-coolGray-600 to-coolGray-400 min-h-screen pt-12">
+                <div className="tags">
+                    <TagButton name="all" handleSetTag={setTag} tagActive={ tag === 'all' ? true : false }/>
+                    <TagButton name="cars" handleSetTag={setTag} tagActive={ tag === 'cars' ? true : false }/>
+                    <TagButton name="people" handleSetTag={setTag} tagActive={ tag === 'people' ? true : false }/>
+                    <TagButton name="motorcycle" handleSetTag={setTag} tagActive={ tag === 'motorcycle' ? true : false }/>
+                    <TagButton name="dogs" handleSetTag={setTag} tagActive={ tag === 'dogs' ? true : false }/>
                 </div>
 
-                <div className="container w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6 mt-10 mb-10">
+                <div className="container w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6 mt-10 pb-10">
                         { filteredImages.map( image => (
                             <div key={image.id} className="border-2 rounded-lg">
-                                <img className="w-full" src={`../images/${image.imageName}`} alt="images"/>
+                                <img className="w-full rounded-md" src={`../images/${image.imageName}`} alt="images"/>
                             </div>))}
                 </div>
         </div>
-                
+        </>      
     );
 };
 
-const TagButton = ( {name, handleSetTag} ) => {
+const TagButton = ( {name, handleSetTag, tagActive} ) => {
     return ( 
-        <button onClick={ () => handleSetTag(name)} className="border-2 rounded-md p-1 font-black font-dosis ml-5 mr-5 cursor-pointer">{name.toUpperCase()}</button>
+        <button className= {` tag ${ tagActive ? 'active': null} `} onClick={ () => handleSetTag(name)}>{name.toUpperCase()}
+        {' '}</button>
     );
 };
 

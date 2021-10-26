@@ -5,7 +5,7 @@ import Clubhouse from '../images/clubhouse.jpg';
 const Hero = () => {
     return (
         <>
-        <div className="min-h-screen p-12 space-y-6 md:space-y-8 bg-gradient-to-b from-trueGray-900 via-teal-900 to-trueGray-900 grid grid-cols-1">
+        <div className="min-h-screen p-12 space-y-6 md:space-y-8 bg-gradient-to-b from-coolGray-800 via-cyan-900 to-coolGray-700 grid grid-cols-1">
             <h1 className="flex justify-center text-5xl uppercase font-black mt-6 text-warmGray-300
                 lg:text-7xl 
                 md:text-6xl">Welcome

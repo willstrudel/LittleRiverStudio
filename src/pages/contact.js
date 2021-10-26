@@ -60,14 +60,14 @@ return (
             </div>
        
 
-        <div className="min-h-screen justify-center grid items-center bg-gradient-to-bl from-trueGray-900 via-trueGray-600 to-trueGray-900">
-            <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 border-b-4 border-white pb-16
+        <div className="min-h-screen justify-center grid items-center bg-gradient-to-bl from-coolGray-900 via-coolGray-600 to-trueGray-900">
+            <h1 className="flex justify-center uppercase font-black text-white text-6xl mt-20 border-b-4 border-white pb-12
                 lg:text-7xl 
                 md:text-7xl">Contact
             </h1>
         
 
-            <div className="border-b-4 pb-10 border-white">
+            <div className="border-b-4 pb-20 border-white">
                 <div className="flex justify-center">
                     <form onSubmit={sendEmail}>
                         <div className="row mx-auto">
@@ -94,7 +94,7 @@ return (
             </div>
 
             <div className="flex justify-center mb-8">
-                    <ul className="flex space-x-16">
+                    <ul className="flex space-x-12">
                     <a className=" text-black visited:text-blue-300 App-link hover:scale-125 hover:-translate-y-2 transform-gpu" href="https://www.linkedin.com/in/will-struder" target="_blank" rel="noopener noreferrer"><li><GrLinkedin /></li></a>
                     <a className=" text-black visited:text-blue-300 App-link hover:scale-125 hover:-translate-y-2 transform-gpu" href="https://www.github.com/willstrudel" target="_blank" rel="noopener noreferrer"><li><GrGithub /></li></a>
                     <a className=" text-black visited:text-blue-300 App-link hover:scale-125 hover:-translate-y-2 transform-gpu" href="https://www.youtube.com/channel/UCeEj5ctVxGU0cf8bDFX_KSA" target="_blank" rel="noopener noreferrer"><li><GrYoutube /></li></a>

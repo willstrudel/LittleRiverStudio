@@ -7,7 +7,7 @@ ReactModal.setAppElement('#root');
 const About = () => {
     return (
         <>
-            <main className="min-h-screen p-8 bg-gradient-to-bl from-trueGray-900 via-trueGray-600 to-trueGray-900 grid lg:grid-cols-2 justify-center items-center">
+            <main className="min-h-screen p-8 bg-gradient-to-bl from-coolGray-900 via-coolGray-600 to-coolGray-900 grid lg:grid-cols-2 justify-center items-center">
                 
                 <div className="lg:gap-24 gap-12 grid justify-center mt-14">
                     <h1 className="justify-center flex text-5xl md:text-7xl uppercase font-black text-white">About Me
