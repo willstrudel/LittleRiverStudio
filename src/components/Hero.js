@@ -48,8 +48,8 @@ const Hero = () => {
                 </ol>
             </div>
 
-            <Link className="flex justify-center mt-4" to="/about">
-                <div className="flex justify-center uppercase px-4 h-12 text-sm text-center items-center bg-black rounded-lg animate-bounce text-white font-quicksand hover:bg-trueGray-800 transition duration-300 ease-in-out 
+            <Link className="flex justify-center" to="/about">
+                <div className="flex justify-center uppercase px-6 py-4 text-sm text-center items-center bg-black rounded-lg animate-bounce text-white font-quicksand hover:bg-trueGray-800 transition duration-300 ease-in-out 
                 md:hidden
                 md:text-1xl  
                 lg:text-2xl">About Me
@@ -60,7 +60,7 @@ const Hero = () => {
     </div>
     <footer className="flex-grow bottom-0 fixed inset-x-0 p-1 flex justify-center bg-coolGray-900">
                 <p className="text-white text-sm xs:text-xs md:text-lg">
-                    Copyright © 2021 Little River Studio LLC. Designed by  
+                    Copyright © 2021 Little River Studio LLC. Design by  
                 </p> 
                  <p className="font-poiret flex text-white xs:text-xs text-sm md:text-xl pl-2">
                 Will Struder
