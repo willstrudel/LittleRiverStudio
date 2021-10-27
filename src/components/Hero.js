@@ -46,7 +46,7 @@ const Hero = () => {
                     <li>- Videography</li>
                     <li>- Social Media Marketing</li>
                 </ol>
-                <Link className="flex justify-center pt-12" to="/about">
+                <Link className="flex justify-center pt-20" to="/about">
                     <div className="flex justify-center uppercase px-6 py-4 text-sm text-center items-center bg-black rounded-lg animate-bounce text-white font-quicksand hover:bg-trueGray-800 transition duration-300 ease-in-out 
                     md:hidden
                     md:text-1xl  
