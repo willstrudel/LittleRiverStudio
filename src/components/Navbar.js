@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({toggle}) => {
     return (
-        <nav className="z-50 flex justify-between items-center h-14 bg-black text-white fixed w-full shadow-2xl text-lg md:text-xl font-quicksand" role="navigation">
+        <nav className="z-50 flex justify-between items-center h-14 bg-black text-white fixed w-full shadow-2xl text-md md:text-xl font-quicksand" role="navigation">
             <Link to="/" className="pl-4 md:pl-8">Little River Studio</Link>
                 <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
                     <svg className="w-6 h-6" 

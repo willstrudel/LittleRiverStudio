@@ -3,13 +3,13 @@ import React from 'react'
 const Videos = () => {
     return (
         <>
-            <main className="min-h-screen justify-center items-center bg-coolGray-600">
-                <div className="flex justify-center border-b-4 pb-8 border-indigo-500 xl:mb-2 sm:border-none">
-                     <h1 className="mt-32 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Videos</h1>
+            <main className="min-h-screen justify-center items-center bg-gradient-to-b from-coolGray-900 via-coolGray-700 to-coolGray-700">
+                <div className="flex justify-center">
+                     <h1 className="mt-28 mb-10 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Videos</h1>
                 </div>
 
 
-                <div className=" bg-coolGray-600 items-center grid grid-rows-1 md:grid-row-1 lg:grid-cols-2 pb-12">
+                <div className="bg-gradient-to-t from-coolGray-700 via-coolGray-600 to-coolGray-800  items-center grid grid-rows-1 md:grid-row-1 lg:grid-cols-2 pb-12">
 
                   
                     <div className="grid md:pt-0 pt-10 sm:pt-0">
@@ -33,8 +33,8 @@ const Videos = () => {
                     </div>
                 </div>
             </main>
-            <footer className="w-full bottom-0 fixed p-2 flex justify-center bg-coolGray-900">
-                <p className="text-white text-sm md:text-lg">
+            <footer className="w-full bottom-0 inset-x-0 fixed p-2 flex justify-center bg-coolGray-900">
+                <p className="text-white xs:text-xs text-sm md:text-lg">
                     Copyright © 2021 Little River Studio. Designed by  
                 </p> 
                  <p className="font-poiret flex text-white text-sm md:text-xl pl-2">
