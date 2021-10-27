@@ -62,7 +62,7 @@ const Hero = () => {
                 <p className="text-white text-sm xs:text-xs md:text-lg">
                     Copyright © 2021 Little River Studio LLC. Designed by  
                 </p> 
-                 <p className="font-poiret flex text-white text-sm md:text-xl pl-2">
+                 <p className="font-poiret flex text-white xs:text-xs text-sm md:text-xl pl-2">
                 Will Struder
                 </p> 
             </footer>
