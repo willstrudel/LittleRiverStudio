@@ -60,7 +60,7 @@ const Hero = () => {
     </div>
     <footer className="flex-grow bottom-0 fixed inset-x-0 p-1 flex justify-center bg-coolGray-900">
                 <p className="text-white text-sm xs:text-xs md:text-lg">
-                    Copyright © 2021 Little River Studio. Designed by  
+                    Copyright © 2021 Little River Studio LLC. Designed by  
                 </p> 
                  <p className="font-poiret flex text-white text-sm md:text-xl pl-2">
                 Will Struder
