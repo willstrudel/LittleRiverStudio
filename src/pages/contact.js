@@ -103,6 +103,14 @@ return (
             </div>   
         </div>
         </IconContext.Provider>
+        <footer className="w-full bottom-0 fixed p-2 flex justify-center bg-coolGray-900">
+                <p className="text-white text-sm md:text-lg">
+                    Copyright © 2021 Little River Studio. Designed by  
+                </p> 
+                 <p className="font-poiret flex text-white text-md md:text-xl pl-2">
+                Will Struder
+                </p> 
+            </footer>
     </>
     )
 }

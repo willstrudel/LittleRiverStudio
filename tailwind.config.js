@@ -46,6 +46,8 @@ module.exports = {
       fontFamily: {
         'quicksand': ["Quicksand", "sans-serif"],
         'dosis': ["Dosis", "sans-serif"],
+        'poiret': ["Poiret One", "cursive"],
+        'voltaire': ["Voltaire", "sans-serif"],
       },
     },
   },
