@@ -13,7 +13,7 @@ const Hero = () => {
                 <img className="rounded-sm shadow-3xl" src={Clubhouse} alt="clubhouse" />
             </div>
             
-            <div className="absolute grid justify-center left-1/2 right-1/2">
+            <div className="absolute grid justify-center left-1/2 right-1/2 pt-12">
                 <div className="grid justify-center">
                     <h1 className="text-5xl uppercase font-black mt-16 text-warmGray-300
                         lg:text-7xl 
@@ -34,13 +34,13 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="flex mt-12 justify-center">
-                <p className="w-3/4 md:w-2/3 xl:w-1/3 text-center text-white text-xl md:text-2xl">
+            <div className="flex mt-6 justify-center">
+                <p className="w-3/4 xl:w-2/3 2xl:w-1/3 leading-relaxed md:leading-relaxed text-center text-white text-xl md:text-2xl">
                 I am proud to present the newly revised website for Little River Studio! Here at LRS, we combine passion for web development and photography to bring you a wide variety of services. Below are a few examples, make sure to check out the Contact page if you have any questions!
                 </p>
             </div>
             <div className="grid justify-center text-center pt-12 pb-20">
-                <ol className="text-white grid justify-center text-lg p-4 border-t-4 border-b-4">
+                <ol className="text-white grid justify-center leading-relaxed text-lg md:text-xl p-4 border-t-4 border-b-4">
                     <li>- Web Design</li>
                     <li>- Headshots/Portraits</li>
                     <li>- Videography</li>

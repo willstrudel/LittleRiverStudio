@@ -11,7 +11,7 @@ const Coding = () => {
         <>
             <main className="min-h-screen p-6 bg-gradient-to-bl from-coolGray-900 via-coolGray-600 to-coolGray-900 grid grid-cols-1">
                 <div className="pt-20">
-                    <h1 className="justify-center flex text-white text-5xl md:text-6xl lg:text-7xl uppercase font-black">Coding Projects</h1>
+                    <h1 className="justify-center flex text-white text-center text-5xl md:text-6xl lg:text-7xl uppercase font-black">Coding Projects</h1>
                 </div>
                 
                     <div className="pt-20 pb-20">
