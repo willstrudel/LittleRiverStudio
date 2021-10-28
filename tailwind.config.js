@@ -39,7 +39,9 @@ module.exports = {
 
     extend: {
 
-
+      backgroundImage: (theme) => ({
+        'clubhouse-img': "url('./images/clubhouse.jpg')",
+      }),
 
       colors: colors,
 

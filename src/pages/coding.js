@@ -14,7 +14,7 @@ const Coding = () => {
                     <h1 className="justify-center flex text-white text-center text-5xl md:text-6xl lg:text-7xl uppercase font-black">Coding Projects</h1>
                 </div>
                 
-                    <div className="pt-20 pb-20">
+                    <section className="pt-20 pb-20">
                         <Carousel breakPoints={breakPoints}>
                         <div className="bg-gray-100 flex justify-center align-middle ">
                             <img src="../images/enCapsulate.jpg" alt="pic"></img>
@@ -30,9 +30,9 @@ const Coding = () => {
                         <a className="justify-center flex text-white pt-4" href="https://encapsulate.herokuapp.com/" target="_blank" rel="noopener noreferrer">Deployed Application</a>
                         <a className="justify-center flex text-white pt-4" href="https://github.com/willstrudel/enCapsulate" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                        
-                    </div>
+                    </section>
 
-                    <div className="pb-12">
+                    <section className="pb-12">
                         <Carousel breakPoints={breakPoints}>
                         <div className="bg-gray-100 flex justify-center align-middle ">
                             <img src="../images/EmptyPantry.jpg" alt="pic"></img>
@@ -47,7 +47,7 @@ const Coding = () => {
                         <h1 className="pt-8 flex justify-center text-white text-xl md:text-2xl xl:text-3xl font-quicksand">"Empty Pantry: Homemade Recipe Generator."</h1>
                         <a className="justify-center flex text-white pt-4" href="https://willstrudel.github.io/Empty-Pantry/" target="_blank" rel="noopener noreferrer">Deployed Application</a>
                         <a className="justify-center flex text-white pt-4" href="https://github.com/willstrudel/Empty-Pantry/" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-                    </div>
+                    </section>
                     
             </main>
 
