@@ -15,7 +15,7 @@ const Hero = () => {
             
             <div className="absolute grid justify-center left-1/2 right-1/2 pt-12">
                 <div className="grid justify-center">
-                    <h1 className="text-5xl uppercase font-black mt-16 text-warmGray-300
+                    <h1 className="text-5xl uppercase font-black mt-8 text-warmGray-300
                         lg:text-7xl 
                         md:text-6xl">Welcome
                     </h1>
