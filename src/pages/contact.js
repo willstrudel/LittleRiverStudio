@@ -25,9 +25,10 @@ const Contact = (props) => {
 return (
     <>
         <IconContext.Provider value= {{ color: "white", size: "2em",}}>
-            <div>
+            
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                    <motion.div className="" 
+                
+                    <motion.div  
                         initial={{
                             
                             opacity: 0,
@@ -60,7 +61,7 @@ return (
                         </div>
                         </motion.div>
                  </Modal>
-            </div>
+            
        
 
         <div className="min-h-screen justify-center grid items-center bg-gradient-to-bl from-coolGray-900 via-coolGray-600 to-trueGray-900">
