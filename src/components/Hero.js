@@ -14,7 +14,7 @@ const Hero = () => {
 
     return (
 <>
-    <main className="relative grid bg-coolGray-800 justify-center h-screen w-full bg-contain md:bg-cover bg-center bg-fixed bg-no-repeat bg-river-img" style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
+    <main className="relative grid bg-coolGray-800 justify-center h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat bg-river-img" style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
         
         <section className="justify-center lg:pt-96 grid grid-cols-1">
 

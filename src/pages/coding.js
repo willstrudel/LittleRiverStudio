@@ -26,7 +26,7 @@ const Coding = () => {
                             <img src="../images/enCapsulate3.jpg" alt="pic"></img>
                         </div>
                         </Carousel>
-                        <h1 className="pt-8  flex justify-center text-white text-xl md:text-2xl xl:text-3xl font-quicksand">"enCapsulate: Sustainable Capsule Clothing."</h1>
+                        <h1 className="pt-8 text-center flex justify-center text-white text-xl md:text-2xl xl:text-3xl font-quicksand">"enCapsulate: Sustainable Capsule Clothing."</h1>
                         <a className="justify-center flex text-white pt-4" href="https://encapsulate.herokuapp.com/" target="_blank" rel="noopener noreferrer">Deployed Application</a>
                         <a className="justify-center flex text-white pt-4" href="https://github.com/willstrudel/enCapsulate" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                        
