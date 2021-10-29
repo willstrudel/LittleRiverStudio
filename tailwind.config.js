@@ -41,6 +41,7 @@ module.exports = {
 
       backgroundImage: (theme) => ({
         'clubhouse-img': "url('./images/clubhouse.jpg')",
+        'river-img': "url('./images/river.jpg')",
       }),
 
       colors: colors,

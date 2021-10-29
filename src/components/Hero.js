@@ -1,38 +1,54 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Clubhouse from '../images/clubhouse.jpg';
+
 
 const Hero = () => {
+
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
 <>
-    <main className="min-h-screen bg-gradient-to-b from-coolGray-900 via-coolGray-900 to-coolGray-600">
-        <section className="justify-center lg:pt-0 md:space-y-8 grid grid-cols-1 lg:grid-cols-1">
-            <div className="grid justify-center pt-14">
-                <img className="rounded-sm shadow-3xl" src={Clubhouse} alt="clubhouse" />
-            </div> 
-                <section className="absolute grid justify-center left-1/2 right-1/2 pt-12">
-                    <div className="grid justify-center">
-                        <h1 className="text-5xl uppercase font-black mt-6 text-warmGray-300
+    <main className="relative grid bg-coolGray-800 justify-center h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat bg-river-img" style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
+        
+        <section className="justify-center pt-96 grid grid-cols-1">
+
+            
+             
+               
+                    <div className="lg:align-top lg:items-center lg:flex grid justify-center pt-28 lg:pt-36">
+                        <h1 className="text-5xl uppercase font-black text-warmGray-300
                             lg:text-7xl 
                             md:text-6xl">Welcome
                         </h1>
-                    </div>
-                    <div className="grid justify-center pt-6">
-                            <p className="text-lg grid justify-center text-warmGray-300 font-dosis 
+                        <div className="grid lg:pl-8 lg:pr-8 lg:flex text-center justify-center">
+                            <p className="text-lg text-warmGray-300 font-dosis 
                                 md:text-xl
                                 lg:text-3xl">to
                             </p>
-                        <div className="grid justify-center pt-6">
-                            <p className="text-3xl text-warmGray-300 font-dosis 
-                            md:text-4xl
-                            ">Little River Studio!
-                            </p>
                         </div>
+                            <div className="grid lg:flex justify-center">
+                                <p className="text-3xl text-warmGray-300 font-dosis 
+                                md:text-4xl
+                                lg:text-5xl
+                                ">Little River Studio!
+                                </p>
+                            </div>
+                        
                     </div>
-                </section>
+                
+                    <div className="h-0 flex flex-col pt-80"></div>
+            
 
-                <section>
-                    <div className="flex mt-6 justify-center">
+                
+
+                <section className="bg-coolGray-800">
+                    <div className="flex mt-96 justify-center">
                         <p className="w-3/4 xl:w-2/3 2xl:w-1/3 leading-relaxed md:leading-relaxed text-center text-white text-xl md:text-2xl">
                         I am proud to present the newly revised website for Little River Studio! Here at LRS, we combine passion for web development and photography to bring you a wide variety of services. Below are a few examples, make sure to check out the Contact page if you have any questions!
                         </p>
@@ -55,6 +71,7 @@ const Hero = () => {
                 </section>
         </section>
     </main>
+
         <footer className="flex-grow bottom-0 fixed inset-x-0 p-1 flex justify-center bg-coolGray-900">
             <p className="text-white text-sm xs:text-xs md:text-lg">
                 Copyright © 2021 Little River Studio LLC. Design by  
