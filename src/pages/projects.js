@@ -7,7 +7,7 @@ import Vans from '../images/vans.jpg';
 const Projects = () => {
     return (
         <>
-        <div className="min-h-screen grid justify-center items-center bg-gradient-to-b from-coolGray-500 via-coolGray-700 to-coolGray-500">
+        <div className="min-h-screen grid justify-center items-center bg-gradient-to-b from-coolGray-600 via-coolGray-900 to-coolGray-600">
              
             <div className="flex justify-center mt-20 sm:mt-20 md:mt-10 lg:mt-20 xl:mb-10">
                 <h1 className="md:mt-10 mb-8 lg:mb-0 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Projects</h1>

@@ -48,12 +48,12 @@ const Hero = () => {
                 
 
                 <section className="bg-coolGray-800">
-                    <div className="flex lg:mt-96 mt-12 justify-center">
+                    <div className="flex lg:mt-28 mt-12 justify-center">
                         <p className="w-3/4 xl:w-2/3 2xl:w-1/3 leading-relaxed md:leading-relaxed text-center text-white text-xl md:text-2xl">
                         I am proud to present the newly revised website for Little River Studio! Here at LRS, we combine passion for web development and photography to bring you a wide variety of services. Below are a few examples, make sure to check out the Contact page if you have any questions!
                         </p>
                     </div>
-                    <div className="grid justify-center text-center pt-12 pb-28">
+                    <div className="grid justify-center text-center pt-12 mb-20">
                         <ol className="text-white grid justify-center leading-relaxed text-lg md:text-xl p-4 border-t-4 border-b-4">
                             <li>- Web Design</li>
                             <li>- Headshots/Portraits</li>
