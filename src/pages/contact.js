@@ -27,7 +27,7 @@ return (
         <IconContext.Provider value= {{ color: "white", size: "2em",}}>
             <div>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                    <motion.div className="bg-coolGray-800 h-full" 
+                    <motion.div className="" 
                         initial={{
                             
                             opacity: 0,
@@ -45,17 +45,19 @@ return (
                         }}
                         exit={{
                             opacity: 0,
-                        }}>
-                    <div className="bg-coolGray-700 h-full">  
-                    <h2 className="bg-coolGray-700 font-dosis text-5xl lg:text-7xl xl:text-8xl text-white uppercase flex justify-center font-bold pt-40 pb-6">Thank You!
-                    </h2>
-                        <p className=" relative text-center text-white xs:top-28 xs:px-12 sm:top-28 md:px-32 text-xl md:text-2xl xl:text-3xl px-20 md:top-40">Your message has been sent, we will get back to you as soon as possible. -LRS
-                        </p>
-                            <div className=" relative xs:top-36 sm:top-36 md:top-60 lg:top-72 flex justify-center pt-20 lg:pt-8">
-                                <button className="border-black border bg-indigo-600 hover:bg-green-500 rounded-full p-1 md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}><IoMdCheckmark size="2.5em" />
+                        }}
+                        >
+                        <div className="">  
+                            <h2 className="font-dosis text-5xl flex justify-center font-bold pt-40 pb-6">
+                                Thank You!
+                            </h2>
+                            <p className="relative text-center xs:top-28 xs:px-12 sm:top-28 md:px-32 text-xl md:text-2xl px-20 md:top-80">Your message has been sent, we will get back to you as soon as possible. -LRS
+                            </p>
+                            <div className="relative xs:top-36 sm:top-36 md:top-96 flex justify-center pt-20">
+                                <button className="border-black border bg-indigo-600 hover:bg-green-500 rounded-full md:p-2 md:text-lg" onClick={() => setModalIsOpen(false)}><IoMdCheckmark size="2.5em" />
                                 </button>
                             </div>
-                            </div>
+                        </div>
                         </motion.div>
                  </Modal>
             </div>
