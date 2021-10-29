@@ -3,9 +3,9 @@ import React from 'react'
 const Videos = () => {
     return (
         <>
-            <main className="min-h-screen justify-center items-center bg-gradient-to-b from-coolGray-900 via-coolGray-700 to-coolGray-700">
+            <main className="min-h-screen justify-center items-center bg-gradient-to-b from-coolGray-600 via-coolGray-700 to-coolGray-700">
                 <div className="flex justify-center">
-                     <h1 className="mt-28 mb-10 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Videos</h1>
+                     <h1 className="mt-24 mb-10 flex justify-center uppercase font-black text-white text-6xl md:text-7xl lg:text-7xl">Videos</h1>
                 </div>
 
 
