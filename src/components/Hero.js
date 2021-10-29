@@ -14,9 +14,9 @@ const Hero = () => {
 
     return (
 <>
-    <main className="relative grid bg-coolGray-800 justify-center h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat bg-river-img" style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
+    <main className="relative grid bg-coolGray-800 justify-center h-screen w-full bg-contain md:bg-cover bg-center bg-fixed bg-no-repeat bg-river-img" style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
         
-        <section className="justify-center pt-96 grid grid-cols-1">
+        <section className="justify-center lg:pt-96 grid grid-cols-1">
 
             
              
@@ -48,7 +48,7 @@ const Hero = () => {
                 
 
                 <section className="bg-coolGray-800">
-                    <div className="flex mt-96 justify-center">
+                    <div className="flex lg:mt-96 mt-12 justify-center">
                         <p className="w-3/4 xl:w-2/3 2xl:w-1/3 leading-relaxed md:leading-relaxed text-center text-white text-xl md:text-2xl">
                         I am proud to present the newly revised website for Little River Studio! Here at LRS, we combine passion for web development and photography to bring you a wide variety of services. Below are a few examples, make sure to check out the Contact page if you have any questions!
                         </p>
