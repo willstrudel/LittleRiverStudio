@@ -42,8 +42,8 @@ const Hero = () => {
                         
                     </div>
                 
-                    <div className="h-0 flex flex-col pt-80"></div>
-            
+                    <div className="h-0 flex flex-col pt-72"></div>
+        
 
                 
 
@@ -53,20 +53,13 @@ const Hero = () => {
                         I am proud to present the newly revised website for Little River Studio! Here at LRS, we combine passion for web development and photography to bring you a wide variety of services. Below are a few examples, make sure to check out the Contact page if you have any questions!
                         </p>
                     </div>
-                    <div className="grid justify-center text-center pt-12 pb-20">
+                    <div className="grid justify-center text-center pt-12">
                         <ol className="text-white grid justify-center leading-relaxed text-lg md:text-xl p-4 border-t-4 border-b-4">
                             <li>- Web Design</li>
                             <li>- Headshots/Portraits</li>
                             <li>- Videography</li>
                             <li>- Social Media Marketing</li>
                         </ol>
-                        <Link className="flex justify-center pt-20" to="/about">
-                            <div className="flex justify-center uppercase px-6 py-4 text-sm text-center items-center bg-black rounded-lg animate-bounce text-white font-quicksand hover:bg-trueGray-800 transition duration-300 ease-in-out 
-                            md:hidden
-                            md:text-1xl  
-                            lg:text-2xl">About Me
-                            </div>
-                        </Link>
                     </div>
                 </section>
         </section>
