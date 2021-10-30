@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactModal from 'react-modal'
-import Headshot from '../images/headshot.JPG'
+import React from 'react';
+import ReactModal from 'react-modal';
+import Headshot from '../images/headshot.JPG';
+import GaTech from '../images/GaTech.jpg';
 
 ReactModal.setAppElement('#root');
 
@@ -9,7 +10,7 @@ const About = () => {
         <>
             <main className="min-h-screen p-8 bg-gradient-to-bl from-trueGray-900 via-coolGray-600 to-trueGray-900 grid lg:grid-cols-2 justify-center items-center">
                 
-                <section className="lg:gap-24 gap-12 grid justify-center mt-14">
+                <section className="lg:gap-24 gap-12 grid justify-center mt-14 xxl:-mt-32">
                     <h1 className="justify-center flex text-5xl md:text-7xl uppercase font-black text-white">About Me
                     </h1>
                         <div className="grid">
@@ -24,8 +25,9 @@ const About = () => {
                         </div>     
                 </section>
                 <div className=" flex justify-center p-8 sm:p-12 md:p-4 lg:p-6 xl:p-24 lg:mb-0 mb-14 xl:mt-12">
-                    <div className="flex justify-center rounded-full"> 
-                        <img className=" rounded-full shadow-3xl" src={Headshot} alt="headshot" />
+                    <div className="grid space-y-8 justify-center rounded-sm"> 
+                        <img className="rounded-md shadow-3xl" src={Headshot} alt="headshot" />
+                        <img className="rounded-md shadow-3xl" src={GaTech} alt="headshot" />
                     </div> 
                 </div>     
 
