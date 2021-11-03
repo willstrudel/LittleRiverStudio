@@ -20,7 +20,7 @@ const About = () => {
                                 md:text-xl md:pr-12 pb-8 
                                 lg:text-2xl lg:leading-8
                                 xl:leading-10">
-                            Hey there, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp, specializing in Front End design and site architecture using Tailwind CSS and React. When I'm not building projects and finding new challenges, I shoot videos for local businesses to generate brand awareness. My goal was to create this website using the knowledge and experience I gained for the purpose of starting a business, combining my passion for web development and photography.
+                            Hey there, my name is Will Struder. I am a recent graduate of the Georgia Tech Full-Stack Coding Bootcamp and the owner of Little River Studio LLC, specializing in Front End design and site architecture using Tailwind CSS and React. When I'm not building projects and finding new challenges, I shoot videos for local businesses to generate brand awareness. My goal was to create this website using the knowledge and experience I gained for the purpose of starting a business, combining my passion for web development and photography.
                             </p>
                         </div>     
                 </section>
