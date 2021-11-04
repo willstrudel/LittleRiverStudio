@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
 import Projects from './pages/projects';
@@ -34,6 +34,7 @@ function App() {
 
   return (
     <>
+    <Router basename="/LittleRiverStudio" >
           <Navbar toggle={toggle} />
           <Dropdown isOpen={isOpen} toggle={toggle} />
           <Switch>
@@ -45,6 +46,7 @@ function App() {
             <Route path="/Coding" component={Coding} />
             <Route path="/Photography" component={Photography} />
           </Switch>
+      </Router>
     </>
   );
 }
