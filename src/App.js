@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-    <Router basename="/LittleRiverStudio" >
+    <Router basename="/" >
           <Navbar toggle={toggle} />
           <Dropdown isOpen={isOpen} toggle={toggle} />
           <Switch>
