@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/" >
           <Navbar toggle={toggle} />
           <Dropdown isOpen={isOpen} toggle={toggle} />
           <Switch>
