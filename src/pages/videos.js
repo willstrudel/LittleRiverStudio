@@ -22,7 +22,17 @@ const Videos = () => {
                         </p>
                     </div>
 
-                    <div className="grid">
+                    <div className="grid md:pt-0 pt-10 sm:pt-0">
+                        <div class="flex items-center justify-center m-8 md:m-12 lg:m-16 xl:m-20 aspect-w-16 aspect-h-10">
+                            <iframe title="DJI Mini 2 at Amicalola Falls" src="https://www.youtube.com/embed/Se6yHHQLsDc" className="flex rounded-lg border-2 shadow-xl" allowFullScreen></iframe>
+                        </div>
+                        <h4 className="flex justify-end lg:justify-center text-white mr-8 md:mr-12 lg:mr-0 uppercase font-black text-3xl md:text-4xl lg:text-5xl">Amicalola Falls
+                        </h4>
+                        <p className="m-8 md:m-12 lg:m-16 xl:m-20 text-center text-white text-xl md:text-2xl font-dosis">Went on a little trip to <a className=" text-indigo-300 visited:text-indigo-300 hover:scale-125 hover:-translate-y-2 transform-gpu" href="https://www.amicalolafallslodge.com/" target="_blank" rel="noopener noreferrer">Amicalola Falls</a> in North Georgia for some drone footage, couldn't have asked for a better view with the leaves changing for Fall!
+                        </p>
+                    </div>
+
+                    <div className="grid md:pt-0 pt-10 sm:pt-0">
                         <div class="flex items-center justify-center m-8 md:m-12 lg:m-16 xl:m-20 aspect-w-16 aspect-h-10">
                             <iframe title="Corner Street Tacos" src="https://www.youtube.com/embed/skSXAAl0rgY" className="flex rounded-lg border-2 shadow-xl" allowFullScreen></iframe>
                         </div>
@@ -31,6 +41,7 @@ const Videos = () => {
                         <p className="m-8 md:m-12 lg:m-16 xl:m-20 text-center text-white text-xl md:text-2xl font-dosis">This video was made while visiting the <a className=" text-indigo-300 visited:text-indigo-300 hover:scale-125 hover:-translate-y-2 transform-gpu" href="https://visitwoodstockga.com/landing-page/autumn-in-woodstock-ga/" target="_blank" rel="noopener noreferrer">Woodstock Georgia Fall Festival</a> in late September, looking forward to many more this year!
                         </p>
                     </div>
+                    
                 </div>
             </main>
             <footer className="w-full bottom-0 inset-x-0 fixed p-2 flex justify-center bg-coolGray-900">
